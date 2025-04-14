@@ -1,4 +1,4 @@
 # Event Manager Company: Software QA Analyst/Developer Onboarding Assignment
 
 Issue fixed-
-The nickname used in the cURL requests was different from the one shown in the example, which led to confusion while using the API. This has been corrected to ensure both nicknames are consistent for better clarity and ease of use.
+Fixed the issue where creating a new user with a similar nickname was throwing an error. Now, multiple users can have the same nickname as it is common for different users to share similar or identical nicknames.

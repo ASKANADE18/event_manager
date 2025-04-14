@@ -45,3 +45,4 @@ faker==24.8.0
 PyJWT==2.8.0
 pydantic[email]
 asyncpg
+pytest-cov
