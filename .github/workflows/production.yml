@@ -75,11 +75,14 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
           tags: askanade18/event_managerapi:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
           cache-from: type=registry,ref=askanade18/event_manager:cache
           cache-to: type=inline,mode=max
+          provenance: true
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Scan the Docker image
         uses: aquasecurity/trivy-action@master
