@@ -1,4 +1,4 @@
 # Event Manager Company: Software QA Analyst/Developer Onboarding Assignment
 
 Issue fixed-
-Fixed the issue where creating a new user with a similar nickname was throwing an error. Now, multiple users can have the same nickname as it is common for different users to share similar or identical nicknames.
+Currently, email verification requires a UUID, which is not very convenient. Allowing verification directly through the email ID would improve usability, as email addresses are unique identifiers. This change would streamline the process and enhance the user experience.
